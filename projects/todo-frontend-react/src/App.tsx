@@ -48,6 +48,11 @@ function App() {
     setTodos(todos.filter((todo) => todo.id !== id));
   };
 
+  const updateTodo = (id: string, newTitle: string, newDescription: string) => {
+    // TODO: implement this
+    console.log("updateTodo", id, newTitle, newDescription);
+  };
+
   return (
     <>
       <h1>todo list</h1>
@@ -78,6 +83,7 @@ function App() {
             title={todo.title}
             description={todo.description}
             onDelete={() => deleteTodo(todo.id)}
+            // TODO: pass some function to TodoItem to update the todo
           />
         ))}
       </section>

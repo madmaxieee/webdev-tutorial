@@ -18,6 +18,7 @@ export default function TodoItem({
           <input type="checkbox" />
           <p className="todo-title">{title}</p>
         </div>
+        {/* TODO: add a button to trigger edit */}
         <button className="delete-todo" onClick={onDelete}>
           delete
         </button>
